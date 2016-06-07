@@ -1,15 +1,26 @@
 body{
     margin: 100px;
-    background: url("Poze/background-wallpapers-32_NLplhCS.jpg");
+    background: url("http://www.intrawallpaper.com/static/images/518164-backgrounds.jpg");
     transition:all .5s ease-in-out;
     
     }  
+.topnav ul.navbar-nav li a:hover,
+.topnav ul.navbar-nav li a:focus,
+.topnav .navbar-brand:hover,
+.topnav .navbar-brand:focus {
+  background: rgba(255, 0, 255, 0.3);
+  color: Yellow;
+}
 
 h1,h2 { 
 color: white;
 border-bottom :1px solid purple;
 }
-
+  li a {
+   display:block;
+    width: 60px;
+    background-color: #dddddd;
+}
 p{
 background-color:#00FFFF ;
  color:blue;
