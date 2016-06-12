@@ -12,6 +12,7 @@ body {
 .topnav .navbar-brand:focus {
   background: rgba(255, 0, 255, 0.3);
   color: Yellow;
+  height:20px;
 }
 
 h1,h2 { 
