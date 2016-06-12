@@ -4,8 +4,7 @@ body {
   margin: 200px;
   background: #0000ff;
   background-size: cover;
-  background-image: url("http://binkyabout.com/wp-content/uploads/2015/11/fireworks.jpg");
-  opacity:0.5;
+  
 } 
    
 .topnav ul.navbar-nav li a:hover,
@@ -15,7 +14,8 @@ body {
   background: rgba(255, 0, 255, 0.3);
   color: Yellow;
 }
-
+.backgroundim
+  {opacity:0.5;}
 h1,h2 { 
 color: white;
 border-bottom :1px solid purple;
