@@ -5,6 +5,7 @@ body {
   background: #0000ff;
   background-size: cover;
   background-image: url("http://binkyabout.com/wp-content/uploads/2015/11/fireworks.jpg");
+  opacity:0.5;
 } 
    
 .topnav ul.navbar-nav li a:hover,
