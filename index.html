@@ -1,47 +1,255 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title> Mihai Moreanu</title>
-  <link rel="stylesheet" href="index.css"> 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="shortcut icon" href="Poze/symbol-icon.png">
-</head>
+<title>Mihai Moreanu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="ii.css">
+
+
 <body>
-  <div id="big-video-vid" style="width: 100%; display: block;
-  overflow: hidden; 
-  position: relative; 
-  min-height: 971px; height: 971px;
-  " class="big-video-vid"><video id="big-video-vid_html5_api" preload="auto" data-setup="{}" 
-  webkit-playsinline="" style="width: auto; height: 100%;" autoplay="" 
-  poster="https://static.renderforest.com/renderforest/images/header-placeholder.jpg" 
-  loop="" class="vjs-tech"><source src="https://dtsf2at75xc8p.cloudfront.net/videos/HD1080.mp4" 
-  type="video/mp4"></video><div style="position: absolute; width: 100%; bottom: 25px; text-align: center;
-  z-index: 2;"><span class="circle fa fa-angle-down"></span></div></div>
- <nav class="navbar navbar-default navbar-fixed-top topnav">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="https://www.facebook.com/mishu98" target="_blank">Mihai Moreanu</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right" style="text-align: left">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+
+<!-- Navbar -->
+<div class="top">
+  <ul class="navbar" id="myNavbar">
+
+    <li><a href="#" class="padding-large">HOME</a></li>
+    <li><a href="#about" class="padding-large">About Me</a></li>
+    <li><a href="#portofolio" class="padding-large">My work</a></li>
+    <li><a href="#swiftbus" class="padding-large">Swift Bus</a></li>
+    <li><a href="#contact" class="padding-large">Contact</a></li>
+
+    </li>
+  </ul>
+</div>
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 opacity display-container">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-xlarge black xlarge wide animate-opacity">MIHAI <span class="hide-small">MOREANU</span> WEBSITE</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<br>
+</br>
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT ME</h3>
+  <p class="center"><em>I love traveling, coding , being entrepreneur</em></p>
+  <p>Welcome to my website! My name is Mihai Moreanu, and I am currently a romanian highschool student passionate of computer science, coding, web development and app development. I know C++, HTML, CSS, Java Script. Here, you can see my Portofolio, Photoshop projects and the last and most interesting app idea "Swift Bus", a digital platform for buses' location. Hope you will enjoy it!</p>
+
+  <div class="row">
+    <div class="center section">
+      <img src="http://i67.tinypic.com/5s6qo.jpg" style="center" class="circle" alt="Photo of Me">
     </div>
-  </nav>
-<center>MY OFFICIAL PAGE</center></h1>
+  </div>
+</div>
+<br>
+</br>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 display-container" id="portofolio">
+  <div class="display-middle">
+    <span class="xxlarge text-light-grey wide">PORTFOLIO</span>
+  </div>
+</div>
 
-  
-  <p class="p1">"Lux in tenebris lucet, et tenebrae eam non comprehenderunt."</p>
+<!-- Container (Portfolio Section) -->
+<br>
+</br>
+<div class="content container padding-64" >
+  <h3 class="center">MY WORK</h3>
+  <p class="center"><em>Here are some phots of my latest projects in Photoshop.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="coloana m3">
+      <img src="http://i64.tinypic.com/2eovgwj.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity">
+    </div>
+
+    <div class="coloana m3">
+      <img src="http://i66.tinypic.com/25sso48.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity">
+    </div>
+
+    <div class="coloana m3">
+      <img src="http://i63.tinypic.com/13zy5xs.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity">
+    </div>
+
+    <div class="coloana m3">
+      <img src="http://i65.tinypic.com/szhjjb.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity">
+    </div>
+
+    <div class="coloana m3">
+      <img src="http://i63.tinypic.com/2di290o.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity">
+    </div>
+
+ </div>
+
+ </div>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="closebtn hover-red text-white xxxlarge container display-topright">×</span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+<br>
+</br>
+
+<!-- Third Parallax Image with Bus Swift Text -->
+<div class="bgimg-4 display-container" id="swiftbus">
+  <div class="display-middle">
+    <span class="xxlarge text-light-grey wide">SWIFT BUS </span>
+  </div>
+</div>
 
 
+<!-- Container (Bus Swift Section) -->
+<br>
+</br>
+
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT BUS SWIFT</h3>
+  <p class="center"><em>In connection with your way</em></p>
+  <p><center>Swiftbus is a digital platform for pedestrians who need accurate information about public transportation and help people efficently reach their final destination.
+  Building a consistent public transportation system where passengers can trust its reliability will result in increased ridership. Passengers will get benefits related to their finances and time management.
+</p>
+
+</div>
+
+<div class="content" style="max-width:800px;position:relative">
+
+<div class="display-container mySlides">
+  <img src="http://oi65.tinypic.com/k6ixy.jpg" style="width:100%">
+  <div class="display-bottomleft large container padding-16 black">
+    Swiftbus, Logo
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="http://oi63.tinypic.com/9l9yk9.jpg" style="width:100%">
+  <div class="display-bottomright large container padding-16 black">
+    Timetable
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="display-topleft large container padding-16 black">
+    Beautiful Mountains
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="img_forest.jpg" style="width:100%">
+  <div class="display-topright large container padding-16 black">
+    The Rain Forest
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="display-middle large container padding-16 black">
+    Mountains!
+  </div>
+</div>
+
+<a class="btn-floating hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="btn-floating hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</div>
+
+<br>
+</br>
+<!--  Parallax Image with Portfolio Text -->
+<div class="bgimg-3 display-container" id="contact">
+  <div class="display-middle">
+     <span class="xxlarge text-light-grey wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<br>
+</br>
+<div class="content container padding-64">
+  <h3 class="center">WHERE I STUDY</h3>
+  <p class="center"><em>I'd love your feedback!</em></p>
+
+  <div class="row padding-32 section">
+    <div class="coloana m4 container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="round-large"></div>
+    </div>
+    <div class="coloana m8 container section">
+      <div class="large margin-bottom">
+        <i class="fa fa-map-marker hover-text-black" style="width:30px"></i> Bucharest,RO<br>
+        <i class="fa fa-phone hover-text-black" style="width:30px"></i> Phone: +40731**<br>
+        <i class="fa fa-envelope hover-text-black" style="width:30px"> </i> Email: moreanumihai@yahoo.com<br>
+      </div>
+      <p>Swing by for a cup of coffee, or leave me a note:</p>
+      <div class="row-padding" style="margin:0 -16px 8px -16px">
+        <div class="half">
+          <input class="input border hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="half">
+          <input class="input border hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="input border hover-light-grey" type="text" placeholder="Comment">
+      <button class="btn section right">SEND</button>
+    </div>
+  </div>
+</div>
+
+<br>
+</br>
+
+<!-- Footer -->
+<footer class="center dark-grey padding-48 hover-black">
+  <p>Powered by <a href="https://www.facebook.com/mishu98" title="W3.CSS" target="_blank" class="hover-opacity">Mihai</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(44.45, 26.1);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "navbar" + " card-2" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card-2 animate-top white", "");
+    }
+}
+</script>
 
 </body>
 </html>
+
